@@ -1,0 +1,31 @@
+﻿@rendermode InteractiveServer
+
+<div class="navmenu">
+    <input type="checkbox" title="Menu expand/collapse toggle" id="navmenu-toggle" class="navmenu-icon" />
+    <label for="navmenu-toggle" class="navmenu-icon"><FluentIcon Value="@(new Icons.Regular.Size20.Navigation())" Color="Color.Fill" /></label>
+    <nav class="sitenav" aria-labelledby="main-menu">
+        <FluentAppBar Style="height: 300px;">
+            <FluentAppBarItem Href="/" Text="Home"
+                              Match="NavLinkMatch.All"
+                              IconRest="@(new Icons.Regular.Size20.Home())"
+                              IconActive="@(new Icons.Filled.Size20.Home())" />
+
+            <FluentAppBarItem Href="counter" Text="Counter"
+                              IconRest="@(new Icons.Regular.Size20.NumberSymbolSquare())"
+                              IconActive="@(new Icons.Filled.Size20.NumberSymbolSquare())" />
+
+            <FluentAppBarItem Href="weather" Text="Weather"
+                              IconRest="@(new Icons.Regular.Size20.WeatherPartlyCloudyDay())"
+                              IconActive="@(new Icons.Filled.Size20.WeatherPartlyCloudyDay())" />
+
+            <FluentAppBarItem Href="register" Text="Register"
+                              IconRest="@(new Icons.Regular.Size20.PlugConnectedSettings())"
+                              IconActive="@(new Icons.Filled.Size20.PlugConnectedSettings())" />
+
+        </FluentAppBar>
+    </nav>
+</div>
+
+@code {
+    // private bool expanded = true;
+}
